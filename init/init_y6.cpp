@@ -1,6 +1,5 @@
 /*
    Copyright (c) 2014, The Linux Foundation. All rights reserved.
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -27,30 +25,37 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include <cstdlib>
+#include <unistd.h>
+#include <fstream>
+#include <string>
 
+#include <cutils/properties.h>
 #include "vendor_init.h"
-#include "property_service.h"
 #include "log.h"
 #include "util.h"
+
+#define ISMATCH(a,b)    (!strncmp(a,b,PROP_VALUE_MAX))
 
 void vendor_load_properties()
 {
     char platform[PROP_VALUE_MAX];
-    char model[110];
-    FILE* fp;
+    std::ifstream fin;
+    std::string buf;
     int rc;
 
     rc = property_get("ro.board.platform", platform, NULL);
     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
-	return;
+        return;
 
-    fp = fopen("/proc/app_info", "rb");
-    while (fgets(model, 100, fp))
-        if (strstr(model, "board_id") != NULL)
+    fin.open("/proc/app_info", std::ios::in);
+    if (!fin)
+        return;
+
+    while (getline(fin, buf))
+        if (buf.find("huawei_fac_product_name") != std::string::npos)
             break;
+		fin.close();
 
     /* L01 version b */
     if (strstr(model, "MSM8909_SCL_L01_VB") != NULL) {
