@@ -103,10 +103,6 @@ persist.radio.no_cons_man_roam=1
 # System prop to turn on hfp client
 bluetooth.hfp.client=1
 
-#Simulate sdcard on /data/media
-#
-persist.fuse_sdcard=true
-
 #
 # System property for Camera
 # System prop to allocate Reprocess buffer as "1"
