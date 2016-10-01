@@ -251,6 +251,10 @@ PRODUCT_PACKAGES += \
 # Ril
 PRODUCT_PACKAGES += \
     libxml2
+    
+# Stlport
+PRODUCT_PACKAGES += \
+    libstlport
 
 # USB
 PRODUCT_PACKAGES += \
