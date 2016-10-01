@@ -58,7 +58,7 @@ void vendor_load_properties()
 		fin.close();
 
     /* L01 version b */
-    if (strstr(model, "MSM8909_SCL_L01_VB") != NULL) {
+    if (buf.find("MSM8909_SCL_L01_VB") != std::string::npos) {
 	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
@@ -67,8 +67,8 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Huawei/SCL-L01/hwSCL-Q:5.1.1/HuaweiSCL-L01/C432B150:user/release-keys");
     }
 
-	/* L02 version b */
-    if (strstr(model, "MSM8909_SCL_L02_VB") != NULL) {
+    /* L02 version b */
+    else if (buf.find("MSM8909_SCL_L02_VB") != std::string::npos) {
 	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
@@ -77,8 +77,8 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Huawei/SCL-L02/hwSCL-Q:5.1.1/HuaweiSCL-L02/C432B150:user/release-keys");
     }
 
-	/* L03 version b */
-    if (strstr(model, "MSM8909_SCL_L03_VB") != NULL) {
+    /* L03 version b */
+    else if (buf.find("MSM8909_SCL_L03_VB") != std::string::npos) {
 	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
@@ -87,8 +87,8 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Huawei/SCL-L03/hwSCL-Q:5.1.1/HuaweiSCL-L03/C432B150:user/release-keys");
     }
 
-	/* L21 version b */
-    if (strstr(model, "MSM8909_SCL_L21_VB") != NULL) {
+    /* L21 version b */
+    else if (buf.find("MSM8909_SCL_L21_VB") != std::string::npos) {
 	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
@@ -103,8 +103,8 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "Huawei/SCL-L21/hwSCL-Q:5.1.1/HuaweiSCL-L21/C432B150:user/release-keys");
     }
 
-	/* U31 version a */
-    if (strstr(model, "MSM8909_SCL_U31_VA") != NULL) {
+    /* U31 version a */
+    else if (buf.find("MSM8909_SCL_U31_VB") != std::string::npos) {
 	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
