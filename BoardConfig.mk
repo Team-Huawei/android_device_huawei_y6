@@ -172,21 +172,6 @@ PROTOBUF_SUPPORTED := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += \
-    device/huawei/y6/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    bootanim.te \
-    diag.te \
-    file.te \
-    file_contexts \
-    init.te \
-    mm-qcamerad.te \
-    mpdecision.te \
-    netd.te \
-    sdcardd.te \
-    system_server.te
  
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
