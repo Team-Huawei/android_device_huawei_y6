@@ -233,13 +233,11 @@ PRODUCT_PACKAGES += \
     libextmedia_jni \
     libOmxSwVencMpeg4 \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVdpp \
     libOmxVenc \
     libOmxVidEnc \
     libOmxVidcCommon \
     libstagefrighthw \
-    libdashplayer \
     qcmediaplayer
 
 # Power
