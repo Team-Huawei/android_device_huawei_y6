@@ -54,7 +54,7 @@ void vendor_load_properties()
 
     /* L01 version b */
     if (strstr(model, "MSM8909_SCL_L01_VB") != NULL) {
-	property_set("ro.product.model", "msm8909");
+	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
         property_set("ro.build.product", "y6");
@@ -64,7 +64,7 @@ void vendor_load_properties()
 
 	/* L02 version b */
     if (strstr(model, "MSM8909_SCL_L02_VB") != NULL) {
-	property_set("ro.product.model", "msm8909");
+	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
         property_set("ro.build.product", "y6");
@@ -74,7 +74,7 @@ void vendor_load_properties()
 
 	/* L03 version b */
     if (strstr(model, "MSM8909_SCL_L03_VB") != NULL) {
-	property_set("ro.product.model", "msm8909");
+	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
         property_set("ro.build.product", "y6");
@@ -84,7 +84,7 @@ void vendor_load_properties()
 
 	/* L21 version b */
     if (strstr(model, "MSM8909_SCL_L21_VB") != NULL) {
-	property_set("ro.product.model", "msm8909");
+	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
         property_set("ro.build.product", "y6");
@@ -100,7 +100,7 @@ void vendor_load_properties()
 
 	/* U31 version a */
     if (strstr(model, "MSM8909_SCL_U31_VA") != NULL) {
-	property_set("ro.product.model", "msm8909");
+	property_set("ro.product.model", "y6");
         property_set("ro.product.name", "y6");
         property_set("ro.product.device", "y6");
         property_set("ro.build.product", "y6");
