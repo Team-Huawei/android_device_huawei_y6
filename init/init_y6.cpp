@@ -43,9 +43,9 @@ void vendor_load_properties()
     FILE* fp;
     int rc;
 
-    rc = property_get("ro.board.platform", platform);
+    rc = property_get("ro.board.platform", platform, NULL);
     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
-        return;
+	return;
 
     fp = fopen("/proc/app_info", "rb");
     while (fgets(model, 100, fp))
