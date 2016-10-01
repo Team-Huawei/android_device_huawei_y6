@@ -133,7 +133,6 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8909
 TARGET_KERNEL_CONFIG := cm_y6_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -159,10 +158,6 @@ TARGET_POWERHAL_VARIANT := qcom
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
-
-# Recovery
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 
 # Ril
 TARGET_RIL_VARIANT := caf
