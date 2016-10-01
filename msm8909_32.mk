@@ -230,12 +230,14 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore \
     libdivxdrmdecrypt \
+    libextmedia_jni \
     libOmxSwVencMpeg4 \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVdpp \
     libOmxVenc \
     libOmxVidEnc \
+    libOmxVidcCommon \
     libstagefrighthw \
     libdashplayer \
     qcmediaplayer
