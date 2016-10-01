@@ -138,10 +138,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    mm-qcamera-app \
-    camera.msm8909 \
-    libmmjpeg_interface \
-    libqomx_core
+    camera.msm8909
 
 # Charger
 PRODUCT_PACKAGES += \
