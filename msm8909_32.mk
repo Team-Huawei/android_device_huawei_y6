@@ -148,12 +148,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
-# Filesystem management tools
-PRODUCT_PACKAGES += \
-    make_ext4fs \
-    setup_fs \
-    e2fsck
-
 # FM
 PRODUCT_PACKAGES += \
     qcom.fmradio \
@@ -196,12 +190,6 @@ PRODUCT_PACKAGES += \
     init.qcom.zram.sh \
     init.qcom.bms.sh \
     init.qcom.fm.sh
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
 
 # Keystore
 PRODUCT_PACKAGES += \
