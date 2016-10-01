@@ -1,2 +1,1 @@
-allow init diag_exec:file execute_no_trans;
 allow init diag:process { transition rlimitinh siginh };
