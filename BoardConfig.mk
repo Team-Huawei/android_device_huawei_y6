@@ -82,7 +82,8 @@ BOARD_CHARGER_SHOW_PERCENTAGE := true
 
 # CMHW
 BOARD_HARDWARE_CLASS := \
-    device/huawei/y6/cmhw
+    hardware/cyanogen/cmhw \
+    $(LOCAL_PATH)/cmhw
 
 # Enables CSVT
 TARGET_USES_CSVT := true
