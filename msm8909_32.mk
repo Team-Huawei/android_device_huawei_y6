@@ -235,6 +235,7 @@ PRODUCT_PACKAGES += \
 
 # Ril
 PRODUCT_PACKAGES += \
+    librmnetctl \
     libxml2
     
 # Stlport
