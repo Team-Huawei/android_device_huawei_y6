@@ -1,14 +1,14 @@
 [
   {
+    "repository": "android_kernel_huawei_msm8909",
+    "target_path": "kernel/huawei/msm8909"
+  },
+  {
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common"
   },
   {
-    "repository": "android_hardware_qcom_fm",
-    "target_path": "hardware/qcom/fm"
-  },
-  {
-    "repository": "android_external_mm-dash",
-    "target_path": "external/mm-dash"
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport"
   }
 ]
