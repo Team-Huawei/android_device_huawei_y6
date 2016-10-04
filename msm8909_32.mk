@@ -123,18 +123,18 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library
 
 # Audio
-PRODUCT_PACKAGES += \
-    audiod \
-    audio.a2dp.default \
-    audio.usb.default \
-    audio.r_submix.default \
-    audio.primary.msm8909 \
-    audio_policy.msm8909 \
-    tinymix \
-    libqcomvisualizer \
-    libqcompostprocbundle \
-    libqcomvoiceprocessing \
-    libsrsprocessing
+# PRODUCT_PACKAGES += \
+#    audiod \
+#    audio.a2dp.default \
+#    audio.usb.default \
+#    audio.r_submix.default \
+#    audio.primary.msm8909 \
+#    audio_policy.msm8909 \
+#    tinymix \
+#    libqcomvisualizer \
+#    libqcompostprocbundle \
+#    libqcomvoiceprocessing \
+#    libsrsprocessing
 
 # Camera
 PRODUCT_PACKAGES += \
